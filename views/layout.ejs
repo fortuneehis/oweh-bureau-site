@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Meta Tag -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Owehbureau - Security and Profiling Agency ">
+     <meta name="author" content="unicoder">
+     <title><%=pageTitle %></title>
+	 
+	 <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kreon:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+
+    <!--  CSS Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min-4.5.2.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/layerslider.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/category/category-one.css">
+
+</head>
+
+<body>
+	<style>
+		
+        /* Custom classes */
+        .md\:hidden {
+            display: none;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 576px) {
+            .md\:hidden {
+                display: block; /* Display on small screens */
+            }
+
+			.sm\:hidden {
+				display: none;
+			}
+        }
+
+
+		.main-nav{
+			background-color: #2a3270;
+		}
+    </style>
+    <div id="page_wrapper" class="bg-light background-phone" style="<%=path=="/" ? 'background-image: url(assets/images/background/1.png); background-repeat: no-repeat; background-size: contain': '';%> ">
+        <!-- Header Section Start -->
+        <header class="transparent-header fixed-bg-secondary nav-on-banner">
+			<div class="secondary-nav-leftside nav-leftpush-overlay sm-mx-none">
+				<nav class="navbar navbar-expand-lg nav-general nav-secondary-hover nav-down-line-active">				
+					<button type="button" class="push-nav-toggle y-center border-0">
+						<span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse navbar-slide-push transation-this bg-white">
+						<span class="slide-nav-close"><i class="flaticon-cancel flat-mini text-secondary"></i></span>
+						<ul class="navbar-nav w-100">
+							<li class="nav-item"><a class="nav-link" href="/appointment">Appointment</a></li>
+						  <li class="nav-item"><a class="nav-link" href="/careers">Make Career</a></li>
+						</ul>
+						<div class="mt-5 mb-3">
+							<ul>
+								<li class="mb-4">
+									<strong class="font-mini text-light">PHONE:</strong><br>
+									<span class="text-secondary">(+234) 913 8830 8494 <br>(+234) 8158-8588</span>
+								</li>
+								<li class="mb-4">
+									<strong class="font-mini text-light">EMAIL:</strong><br>
+									<span class="text-secondary">support@owehbureau.com</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+            <div class="main-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-expand-lg nav-white nav-primary-hover nav-line-active py-2">
+                                <a class="navbar-brand sm:hidden" style="margin-left:80px" href="/"><img class="nav-logo" src="assets/images/logo/1.png" alt="Image not found !"></a>
+								<a class="navbar-brand md:hidden" style="margin-left:80px" href="/"><img class="nav-logo" src="assets/images/logo/1_mobile.png" alt="Image not found !"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link " href="/">Home</a>
+                                        </li>
+										<!-- <li class="nav-item "> <a class="nav-link " href="/about" role="button">About</a> -->
+                                        </li>
+                                    
+										<li class="<%= pageTitle=="careers"?'active':''%> nav-item dropdown"> <a class="nav-link dropdown-toggle" href="/careers" role="button"  aria-haspopup="true" aria-expanded="false">Careers</a>
+                                        </li>
+										<li class="nav-item">
+                                            <a class="nav-link" href="/contact">Contact</a>
+										</li>
+                                    </ul>
+                                </div>
+								 <div class="ml-auto float-right navbar-nav nav-element pr-5">
+									<div class="navbar-nav search-pop position-relative">
+										<span class="flaticon-search flat-mini text-white"></span>
+										<div class="search-form shadow-sm bg-white">
+											<form action="#" method="post" class="position-relative">
+											  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+											  <button class="btn-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+											</form>
+										</div>
+									</div>
+									<!-- <div class="navbar-nav my-account mx-4 position-relative">
+										<a href="#" class="top-quantity text-white" title="Wishlist">
+											<i class="flaticon-like-1 flat-mini text-white"></i>
+										</a>
+									</div>
+									<div class="navbar-nav cart-view position-relative">
+										<a href="#" class="top-quantity text-white">
+											<i class="flaticon-shopping-bag flat-mini text-white"></i>
+											<span class="text-dark">0</span>
+										</a>
+									</div> -->
+								</div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<!-- Header Section End -->
+
+
+        <!-- page body Start-->
+
+        <%- body %>
+
+        <!-- page body End -->
+
+
+	<!-- Footer Section Start -->
+	<footer class="full-row bg-footer footer-default-dark" style="padding-bottom: 30px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-6">
+					<div class="footer-widget contact-widget mb-5">
+						<div class="footer-logo mb-4">
+							<img src="assets/images/logo/1.png" alt="Image not found!">
+						</div>
+					</div>
+					<div class="footer-widget media-widget mb-5">
+						<a href="#"><i class="fab fa-whatsapp"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6">
+					<div class="footer-widget contact-widget mb-5">
+					  <h4 class="widget-title mb-4 font-weight-normal">Contact Info</h4>
+						<ul>
+							<li>James Otigba Avenue, Victoria Island, Lagos Nigeria</li>
+							<li>Phone: +23902-0589-9991</li>
+							<li>Email: support@owehbureau.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-2 col-md-6">
+					<div class="footer-widget widget-nav mb-5">
+					  <h4 class="widget-title mb-4 font-weight-normal">More</h4>
+						<ul>
+							<!-- <li><a href="#">About Company</a></li> -->
+							<li><a href="/careers">Career</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="footer-widget appointment-widget mb-4">
+					  <h4 class="widget-title mb-4 font-weight-normal">Appointment</h4>
+					  <p>Ready to enhance your security? Schedule your appointment now for a personalized consultation or protection services that cater to your requirements.</p>
+					  <a href="/appointment" class="btn btn-primary d-block mt-4">Make An Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="bg-footer py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<span>© 2020 All Rights Reserved Owehbureau</span>
+				</div>
+				<div class="col-md-6">
+					<ul class="line-menu float-md-right list-color-general">
+						<li class="float-left"><a href="#">Privacy Policy </a></li>
+						<li class="float-left">|</li>
+						<li class="float-left"><a href="#">Terms and Condition</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- Footer Section End -->
+		
+    <!-- Scroll to top -->
+    <a href="#" class="bg-primary text-white" id="scroll"><i class="fa fa-angle-up"></i></a>
+    <!-- End Scroll To top -->
+    </div><!-- Page Wrapper End -->
+    
+    <!--===============================================================================================-->
+    <!-- All Javascript Plugin File here -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/greensock.js"></script>
+	<script src="assets/js/layerslider.transitions.js"></script>
+	<script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script> 
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/paraxify.js"></script>
+	<script src="assets/js/mixitup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+	$(document).ready(function() {		
+		
+		$('#slider').layerSlider({
+			sliderVersion: '6.0.0',
+			type: 'fullwidth',
+			responsiveUnder: 1350,
+			maxRatio: 1,
+			slideBGSize: 'auto',
+			hideUnder: 0,
+			hideOver: 100000,
+			autoStart: true,
+			keybNav: true,
+			touchNav: true,
+			skin: 'numbers',
+			navPrevNext: false,
+			hoverPrevNext: false,
+			navStartStop: true,
+			navButtons: true,
+			showCircleTimer: false,
+			allowRestartOnResize: true,
+			skinsPath: 'assets/skins/',
+			height: 980
+		});
+	});
+	</script>
+
+</body>
+</html>

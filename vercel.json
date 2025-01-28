@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "builds": [{
+            "src": "build/api.js",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": ["build/views/**", "views/**"]
+            }
+        },
+        {
+            "src": "public/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "buildCommand": "yarn build && cp -r views build/",
+    "routes": [{
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/(.+\\.[a-zA-Z]+)$",
+            "dest": "/public/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/build/api.js?path=$1"
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+/*==================================
+Theme Color All Codes Variable
+==================================*/
+
+:root {
+    --theme-general-color: #606265;
+    /* theme general color ok*/
+}
+
+:root {
+    --theme-primary-color: #eac43b;
+    /* theme primary color ok*/
+}
+
+:root {
+    --theme-secondary-color: #2a3270;
+    /* theme secondary color ok*/
+}
+
+:root {
+    --theme-white-color: #ffffff;
+    /* theme white font color ok*/
+}
+
+:root {
+    --theme-gray-color: #efefef;
+    /* theme gray font color ok*/
+}
+
+:root {
+    --theme-light-color: #f8f9fc;
+    /* theme light gray color*/
+}
+
+:root {
+    --theme-text-gray: #d8d8d8;
+    /* theme text gray color*/
+}
+
+:root {
+    --theme-dark-color: #181b1e;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-footer-color: #21222a;
+    /* theme dark color ok*/
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(234, 196, 59, .5);
+    /* theme secondary color*/
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(42, 50, 112, .8);
+    /* theme secondary color ok*/
+}
+
+:root {
+	--theme-dark-opacity-color: rgba(16, 15, 18, .8);
+	/* theme dark color used*/
+}
+
+:root {
+    --theme-extra1-opacity-color: rgba(33, 34, 42, .8);
+    /* theme secondary color*/
+}
+
+:root {
+    --theme-extra2-opacity-color: rgba(29, 45, 58, .8);
+    /* theme secondary color*/
+}
+
+
+/*==================================
+Font Variable
+==================================*/
+
+:root {
+    --theme-general-font: 'Quicksand', sans-serif;
+    /* Font use for normal text and general text ok*/
+}
+
+:root {
+    --theme-highlight-font: 'Kreon', serif;
+    ;
+    /* Font used in title or special area ok*/
+}
+
+:root {
+    --theme-hiperlink-font: 'Quicksand', sans-serif;
+    /* Font use for normal text and link text */
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: var(--theme-highlight-font);
+    color: var(--theme-secondary-color);
+}
+
+h1,
+.h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2,
+.h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h3,
+.h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h4,
+.h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h5,
+.h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    font-weight: 500;
+	color: var(--theme-white-color)
+}
+
+.navbar .navbar-nav li > ul.dropdown-menu {
+	background-color: var(--theme-secondary-color);
+	border-color: var(--theme-secondary-color)
+}
